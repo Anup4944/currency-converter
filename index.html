@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="icon"
+      href="https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    />
+    <title>Currency converter</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="title">
+        <h1>Convert</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </div>
+      <form id="convertForm">
+        <div>
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" value="0" />
+        </div>
+        <div>
+          <label for="input">From</label>
+          <select id="input"></select>
+        </div>
+        <div>
+          <label for="output">To</label>
+          <select id="output"></select>
+        </div>
+        <button>Convert</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

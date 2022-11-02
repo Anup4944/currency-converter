@@ -1,0 +1,113 @@
+* {
+  font: 1em "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.2);
+}
+
+#container > .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b5b95;
+}
+
+#container > .title > svg {
+  margin-right: 5px;
+  width: 30px;
+}
+
+#container > .title > h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#convertForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#convertForm > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-display: column;
+}
+
+#convertForm > div > label {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+#convertForm > div > input,
+#convertForm > div > select {
+  width: 70%;
+  border: 1px solid rgb(210, 207, 207);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 6px;
+  margin: 6px 10px;
+}
+
+#convertForm > button {
+  width: 100%;
+  background-color: rgb(40, 40, 225);
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  margin: 6px 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#convertForm > button:hover {
+  background-color: rgb(4, 4, 90);
+  color: white;
+}
+#result {
+  width: 100%;
+  margin: 20px 0;
+  font-weight: 900;
+  color: rgb(9, 15, 184);
+  text-align: center;
+}
+
+#result.error {
+  background-color: rgba(244, 27, 27, 0.601);
+  color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 480px) and (max-width: 769px) {
+  #container {
+    height: 100vh;
+    width: 100vw;
+    padding: none;
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #convertForm > div > select {
+    font-size: 15px;
+  }
+}
